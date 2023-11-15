@@ -7,7 +7,9 @@ beige #a6785d;
 red #6f2a25;
 */
 
-
+* {
+    box-sizing:border-box;
+}
 /* body font styling */
 body {
     background-color: #E9E2DE;
@@ -22,13 +24,14 @@ body {
     line-height: 1;
   }
   h1 {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
   }
   
   h2 {
-    font-size: 1em;
+    font-size: 2.5em;
     font-weight: 700;
+    text-align: center;
   }
   
   h3 {
@@ -42,6 +45,20 @@ body {
 img {
     width: 100%
 }
+
+/* hero styling */
+.hero p {
+    font-size: .85em;
+    font-weight: 400;
+}
+.hero {
+  background-color: #E2E3E6 ;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
 /*links styling */
 a {
     color: #6f2a25;
@@ -61,6 +78,7 @@ a {
     color: #727a8c;
     outline: 1px solid #727a8c;
   }
+
 /* button styling */
 .button {
     display: inline-block;
@@ -87,4 +105,71 @@ a {
     opacity: 0.8; 
     text-decoration: none;
    background-color: #BFC2C9;
+  }
+
+  /*header styling*/
+  .logo {
+    width: 15%;
+  }
+  header {
+    width: 100%;
+    position:fixed;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #E2E3E6;
+    width: [object Object]px; 
+	height: [object Object]px; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3)  ; 
+  }
+  main {
+    padding-top: 134.21px;
+  }
+
+  nav {
+    display: inline-block;
+    width: 100%;
+  }
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav>ul>li {
+    display: inline-block;
+  }
+  nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  nav>ul>li>a {
+    color: #6f2a25;
+    text-decoration: none;
+  }
+  nav>ul>li>a:visited { 
+    color: #4f5902;
+  }
+  nav>ul>li>a:hover {
+    color: #727a8c;
+    text-decoration: underline; 
+  }
+  nav>ul>li>a:active { 
+    color: #727a8c;
+  }
+  nav>ul>li>a:focus {
+    color: #727a8c;
+    outline: 1px solid #727a8c;
+  }
+
+  /*layout styling*/
+  .container {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 25px 0;
+  }
+  .hero {
+    text-align: center;
   }

@@ -20,8 +20,9 @@
 
 <body>
     <header>
-        <div>
-            <img src="img/logo.svg" alt="logo" />
+        <div class="container">
+            <ul>
+                <div class="logo"> <img src="img/logo.svg" alt="logo" /> </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
@@ -33,35 +34,37 @@
     </header>
 
     <main>
-        <div>
-            <div>
+        <div class="hero">
+            <div class="container">
                 <h1>Hi, I’m Alex</h1>
-                <span>I travel, write, take pictures, and create websites.<br /> I'm happiest when I get to combine all
+                <p>I travel, write, take pictures, and create websites.</p> <p>I'm happiest when I get to combine all
                     of
-                    these and share it with the world. </span>
+                    these and share it with the world.</p>
 
                 <p>If you're interested in working with me please reach out using my contact page</p>
 
             </div>
         </div>
-        <div>
-            <div>
+        <div id="work">
+            <div class="container">
                 <h2>My Work</h2>
-                <div>
-                    <picture>
-                        <source srcset="img/dessert_hub/dessert_hub_cover.png" media="(max-width:767px)">
-                        <img src="img/dessert_hub/dessert_hub_cover.png" alt="cover img for dessert hub project">
-                    </picture>
+                <div class="row">
                     <div>
-                        <h3>Dessert Hub</h3>
-                        <p>Dessert Hub focuses on creating a solution for users who dislike or struggle with the current
-                            selection of recipe sites that are available. This site focuses on creating user-centered
-                            design and solving problems that potential users brought up during interviews and design
-                            testing. My design reflects my user’s needs and helps them achieve their goals. </p>
-                        <a href="dessert_hub.html" class="button">See more of this project</a>
+                        <picture>
+                            <source srcset="img/dessert_hub/dessert_hub_cover.png" media="(max-width:767px)">
+                            <img src="img/dessert_hub/dessert_hub_cover.png" alt="cover img for dessert hub project">
+                        </picture>
                     </div>
                 </div>
                 <div>
+                    <h3>Dessert Hub</h3>
+                    <p>Dessert Hub focuses on creating a solution for users who dislike or struggle with the current
+                        selection of recipe sites that are available. This site focuses on creating user-centered
+                        design and solving problems that potential users brought up during interviews and design
+                        testing. My design reflects my user’s needs and helps them achieve their goals. </p>
+                    <a href="dessert_hub.html" class="button">See more of this project</a>
+                </div>
+                <div class="row">
                     <picture>
                         <source srcset="img/lcm/LCM_cover.png" media="(max-width:767px)">
                         <img src="img/lcm/LCM_cover.png" alt="cover img for low clearence map project">
@@ -76,7 +79,7 @@
                         <a href="#" class="button">See more of this project</a>
                     </div>
                 </div>
-                <div>
+                <div class="row">
                     <picture>
                         <source srcset="img/recycled_reads/recycledreads_cover@.jpg" media="(max-width:767px)">
                         <img src="img/recycled_reads/recycledreads_cover@.jpg"
@@ -95,9 +98,8 @@
         </div>
     </main>
     <footer id="contact">
-        <div>
-            <h2>Get in Touch</h2>
-            <p>Here is some more information about getting in contact with me</p>
+        <div class="container">
+            <h2>Lets Chat!</h2>
             <div>
                 <div><a href="mailto:alexandra.r.smirnof@gmail.com" class="button contact">send me an email</a></div>
                 <div>
