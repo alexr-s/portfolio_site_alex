@@ -88,6 +88,8 @@ a {
     padding: 10px;
     border-radius: 3px;
     transition: 0.2s opacity;
+    transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .button:hover {
     opacity: 0.8; 
@@ -107,6 +109,7 @@ a {
    background-color: #BFC2C9;
   }
 
+  
   /*header styling*/
   .logo {
     margin: auto;
@@ -177,3 +180,80 @@ a {
   .hero {
     text-align: center;
   }
+
+  /*animation styling */
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+  .town {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+  }
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-6 p{
+    font-size: .85em;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 40%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
