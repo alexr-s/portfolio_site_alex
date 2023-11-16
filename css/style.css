@@ -109,7 +109,11 @@ a {
 
   /*header styling*/
   .logo {
-    width: 15%;
+    margin: auto;
+    text-align: center;
+  }
+  .logo img {
+    width: 20px;
   }
   header {
     width: 100%;
@@ -125,7 +129,7 @@ a {
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3)  ; 
   }
   main {
-    padding-top: 134.21px;
+    padding-top: 107.4px;
   }
 
   nav {
