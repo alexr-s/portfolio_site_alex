@@ -112,6 +112,7 @@ a {
   
   /*header styling*/
   .logo {
+    display: inline-block;
     margin: auto;
     text-align: center;
   }
@@ -209,7 +210,28 @@ a {
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 
+  .row::after{
+    content:"";
+    clear:both;
+    display: table;
+  }
+
+  /*footer styling*/
+
+  #contact {
+    text-align: center;
+  }
+  .social-links {
+    text-align: center;
+  }
+  .social-links img {
+   width: 50px;
+  }
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -242,9 +264,9 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 40%;
-  }
+body {
+  font-size: 20px;
+}
   .container {
     max-width: 1200px;
     margin-left: auto;
