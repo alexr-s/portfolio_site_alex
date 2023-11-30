@@ -118,13 +118,12 @@ a:focus {
   text-align: center;
 }
 .logo img {
-  width: 20px;
+  max-width: 150px;
 }
 header {
   width: 100%;
   position: fixed;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   background-color: #e2e3e6;
   width: [object Object]px;
   height: [object Object]px;
@@ -134,20 +133,16 @@ header {
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 main {
-  padding-top: 107.4px;
+  padding-top: 43.8px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin:0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -171,7 +166,34 @@ nav > ul > li > a:focus {
   color: #727a8c;
   outline: 1px solid #727a8c;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
 
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 /*layout styling*/
 .container {
   padding: 0 15px;
@@ -183,51 +205,7 @@ nav > ul > li > a:focus {
   text-align: center;
 }
 
-/*animation styling */
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-  to {
-    fill: #f76414;
-  }
-}
-.town {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 /*footer styling*/
 
@@ -249,10 +227,25 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+  main {
+    padding-top: 107.4px;
+  }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   }
   body {
     font-size: 18px;
