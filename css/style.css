@@ -198,9 +198,17 @@ nav > ul > li > a:focus {
 .container {
   padding: 0 15px;
 }
-
+.row {
+  margin: 25px 0;
+}
 .hero {
   text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
 }
 
 
