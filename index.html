@@ -1,135 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex - UI/UX Design and Integration</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/40ee26a018.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/40ee26a018.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <div class="logo"> <img src="img/logo.svg" alt="logo" /> </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="hero">
-            <div class="container">
-                <h1>Hi, I’m Alex</h1>
-                <p>I travel, write, take pictures, and create websites.</p>
-                <p>I'm happiest when I get to combine all
-                    of
-                    these and share it with the world.</p>
+      <div class="hero">
+        <div class="container">
+          <h1>Hi, I’m Alex</h1>
+          <p>I travel, write, take pictures, and create websites.</p>
+          <p>
+            I'm happiest when I get to combine all of these and share it with
+            the world.
+          </p>
 
-                <p>If you're interested in working with me please reach out using my contact page</p>
-
+          <p>
+            If you're interested in working with me please reach out using my
+            contact page
+          </p>
+        </div>
+      </div>
+      <div id="work">
+        <div class="container">
+          <h2>My Work</h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+              <picture>
+                <source
+                  srcset="img/dessert_hub/dessert_hub_cover.png"
+                  media="(max-width:767px)">
+                <img
+                  src="img/dessert_hub/dessert_hub_cover.png"
+                  alt="cover img for dessert hub project">
+              </picture>
             </div>
-        </div>
-        <div id="work">
-            <div class="container">
-                <h2>My Work</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <picture>
-                            <source srcset="img/dessert_hub/dessert_hub_cover.png" media="(max-width:767px)">
-                            <img src="img/dessert_hub/dessert_hub_cover.png" alt="cover img for dessert hub project">
-                        </picture>
-                    </div>
 
-                    <div class="col-md-6 col-lg-7">
-                        <h3>Dessert Hub</h3>
-                        <p>Dessert Hub focuses on creating a solution for users who dislike or struggle with the current
-                            selection of recipe sites that are available. This site focuses on creating user-centered
-                            design and solving problems that potential users brought up during interviews and design
-                            testing. My design reflects my user’s needs and helps them achieve their goals. </p>
-                        <a href="dessert_hub.html" class="button">See more of this project</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <picture>
-                            <source srcset="img/lcm/LCM_cover.png" media="(max-width:767px)">
-                            <img src="img/lcm/LCM_cover.png" alt="cover img for low clearence map project">
-                        </picture>
-                    </div>
-                    <div class="col-md-6 col-lg-7">
-                        <h3>Low Clearance Map</h3>
-                        <p>Low Clearance Map started as a website in fall 2021 to try and fill a gap in the market. The
-                            current Low Clearance Map website is donation based and has a database of over 10,000
-                            structures across the US and Canada. The goal with this project was to bring that same
-                            functionality to an app, making it easier and more convenient for drivers to utilize while
-                            on the road. </p>
-                        <a href="#" class="button coming-soon">Coming Soon</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <picture>
-                            <source srcset="img/recycled_reads/recycledreads_cover@.jpg" media="(max-width:767px)">
-                            <img src="img/recycled_reads/recycledreads_cover@.jpg"
-                                alt="cover img for recycled reads project">
-                        </picture>
-                    </div>
-                    <div class="col-md-6 col-lg-7">
-                        <h3>Recycled Reads</h3>
-                        <p>Recycled Reads helps users find that perfect book quickly and easily. All of the selection is
-                            second hand, so users also get to help the environment while helping their shelves. The
-                            ability to save and review books to get personalized recommendations keeps users coming
-                            back. </p>
-                        <a href="#" class="button coming-soon">Coming Soon</a>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-7">
+              <h3>Dessert Hub</h3>
+              <p>
+                Dessert Hub focuses on creating a solution for users who dislike
+                or struggle with the current selection of recipe sites that are
+                available. This site focuses on creating user-centered design
+                and solving problems that potential users brought up during
+                interviews and design testing. My design reflects my user’s
+                needs and helps them achieve their goals.
+              </p>
+              <a href="dessert_hub.html" class="button"
+                >See more of this project</a
+              >
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+              <picture>
+                <source
+                  srcset="img/lcm/LCM_cover.png"
+                  media="(max-width:767px)">
+                <img
+                  src="img/lcm/LCM_cover.png"
+                  alt="cover img for low clearence map project">
+              </picture>
+            </div>
+            <div class="col-md-6 col-lg-7">
+              <h3>Low Clearance Map</h3>
+              <p>
+                Low Clearance Map started as a website in fall 2021 to try and
+                fill a gap in the market. The current Low Clearance Map website
+                is donation based and has a database of over 10,000 structures
+                across the US and Canada. The goal with this project was to
+                bring that same functionality to an app, making it easier and
+                more convenient for drivers to utilize while on the road.
+              </p>
+              <a href="#" class="button coming-soon">Coming Soon</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+              <picture>
+                <source
+                  srcset="img/recycled_reads/recycledreads_cover@.jpg"
+                  media="(max-width:767px)">
+                <img
+                  src="img/recycled_reads/recycledreads_cover@.jpg"
+                  alt="cover img for recycled reads project">
+              </picture>
+            </div>
+            <div class="col-md-6 col-lg-7">
+              <h3>Recycled Reads</h3>
+              <p>
+                Recycled Reads helps users find that perfect book quickly and
+                easily. All of the selection is second hand, so users also get
+                to help the environment while helping their shelves. The ability
+                to save and review books to get personalized recommendations
+                keeps users coming back.
+              </p>
+              <a href="#" class="button coming-soon">Coming Soon</a>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <h2>Lets Chat!</h2>
-            <div>
-                <div><a href="mailto:alexandra.r.smirnof@gmail.com" class="button contact">send me an email</a></div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/alexandra-roberts-smirnoff-b6042b255/" target="_blank">
-                        <img src="img/reshot-icon-linkedin-G7YJ8FXBKT.svg">
-                    </a>
-                    <a href="https://github.com/alexr-s" target="_blank">
-                        <img src="img/reshot-icon-github-NY46M9DGFU.svg">
-                    </a>
-                </div>
-                <p>copyright Alex Smirnoff 2023</p>
-
-            </div>
+      <div class="container">
+        <h2>Lets Chat!</h2>
+        <div>
+          <div>
+            <a
+              href="mailto:alexandra.r.smirnof@gmail.com"
+              class="button contact"
+              >send me an email</a
+            >
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/alexandra-roberts-smirnoff-b6042b255/"
+              target="_blank"
+            >
+              <img src="img/reshot-icon-linkedin-G7YJ8FXBKT.svg" alt="linkedin icon">
+            </a>
+            <a href="https://github.com/alexr-s" target="_blank">
+              <img src="img/reshot-icon-github-NY46M9DGFU.svg" alt="github icon">
+            </a>
+          </div>
+          <p>copyright Alex Smirnoff 2023</p>
         </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

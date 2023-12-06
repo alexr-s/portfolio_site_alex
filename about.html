@@ -1,128 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex - UI/UX Design and Integration</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/40ee26a018.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/40ee26a018.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <div class="logo"> <img src="img/logo.svg" alt="logo" /> </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="container">
-            <div>
-                <h1>About</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <picture>
-                        <img src="img/selfie.jpg" alt="image of Alex" />
-                    </picture>
-                </div>
-                <div class="col-lg-6">
-                    <h2>More About Me</h2>
-                    <p>
-                        Alex is a seasoned UI/UX designer whose expertise transcends
-                        conventional boundaries. Her mastery in both UI and UX design,
-                        coupled with proficiency in Figma, enables her to craft seamless
-                        digital experiences. With a command over HTML, CSS, and
-                        Javascript, she brings her designs to life, ensuring they perform
-                        flawlessly across platforms. What sets Alex apart is her ability
-                        to weave strategic copywriting into her designs, creating
-                        experiences that resonate with users on a profound level.
-                    </p>
-                    <p>
-                        Grounded in design theory, human psychology, and user behavior,
-                        Alex's work is distinguished by its intuitive, user-centric
-                        approach. Her designs not only captivate visually but also guide
-                        users effortlessly through their digital journey. From ideation to
-                        design completion, Alex's process is marked by meticulous
-                        attention to detail, ensuring projects are delivered on time and
-                        to the highest standard.
-                    </p>
-                    <p>
-                        Beyond technical prowess, Alex's genuine passion for creating
-                        unforgettable experiences sets her apart. Her curiosity for
-                        emerging design trends and innovative technologies keeps her at
-                        the forefront of the industry. With a dedication to user-centered
-                        design, Alex is poised to transform your digital experiences and
-                        elevate your projects to new heights.
-                    </p>
-                    <a href="#">Download Resume</a>
-                </div>
-            </div>
-
-            <div>
-                <h2>Skills and Tools</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Relevant Skills</h3>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Adobe XD</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Copywriting</li>
-                        <li>Editing</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Tools I Use</h3>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Adobe XD</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div>
+          <h1>About</h1>
         </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <picture>
+              <img src="img/selfie.jpg" alt="image of Alex">
+            </picture>
+          </div>
+          <div class="col-lg-6">
+            <h2>More About Me</h2>
+            <p>
+              Alex is a seasoned UI/UX designer whose expertise transcends
+              conventional boundaries. Her mastery in both UI and UX design,
+              coupled with proficiency in Figma, enables her to craft seamless
+              digital experiences. With a command over HTML, CSS, and
+              Javascript, she brings her designs to life, ensuring they perform
+              flawlessly across platforms. What sets Alex apart is her ability
+              to weave strategic copywriting into her designs, creating
+              experiences that resonate with users on a profound level.
+            </p>
+            <p>
+              Grounded in design theory, human psychology, and user behavior,
+              Alex's work is distinguished by its intuitive, user-centric
+              approach. Her designs not only captivate visually but also guide
+              users effortlessly through their digital journey. From ideation to
+              design completion, Alex's process is marked by meticulous
+              attention to detail, ensuring projects are delivered on time and
+              to the highest standard.
+            </p>
+            <p>
+              Beyond technical prowess, Alex's genuine passion for creating
+              unforgettable experiences sets her apart. Her curiosity for
+              emerging design trends and innovative technologies keeps her at
+              the forefront of the industry. With a dedication to user-centered
+              design, Alex is poised to transform your digital experiences and
+              elevate your projects to new heights.
+            </p>
+            <a href="#">Download Resume</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>Skills and Tools</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Copywriting</li>
+              <li>Editing</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>Tools I Use</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <h2>Lets Chat!</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/alexandra-roberts-smirnoff-b6042b255/" target="_blank">
-                    <img src="img/reshot-icon-linkedin-G7YJ8FXBKT.svg">
-                </a>
-                <a href="https://github.com/alexr-s" target="_blank">
-                    <img src="img/reshot-icon-github-NY46M9DGFU.svg">
-                </a>
-            </div>
+      <div class="container">
+        <h2>Lets Chat!</h2>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/alexandra-roberts-smirnoff-b6042b255/"
+            target="_blank"
+          >
+            <img src="img/reshot-icon-linkedin-G7YJ8FXBKT.svg" alt="linkedin icon">
+          </a>
+          <a href="https://github.com/alexr-s" target="_blank">
+            <img src="img/reshot-icon-github-NY46M9DGFU.svg" alt="bithub icon">
+          </a>
         </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
