@@ -120,6 +120,7 @@ a:focus {
 }
 .logo img {
   max-width: 150px;
+  min-width: 55px;
 }
 header {
   width: 100%;
@@ -233,6 +234,10 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+  .logo img {
+    max-width: 150px;
+    min-width: 75px;
   }
   main {
     padding-top: 107.4px;
